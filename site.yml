@@ -59,3 +59,11 @@
       state: restarted
       enabled: true
 
+- hosts: file_servers
+  become: true
+  tasks:
+
+  - name: 
+    package:
+      name: samba
+      state: latest
